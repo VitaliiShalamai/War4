@@ -120,6 +120,8 @@ header {
 }
 
 .nav-contact {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -131,6 +133,10 @@ header {
 .nav-contact:hover,
 .nav-contact:focus {
   color: var(--accent-color);
+}
+
+.contact-icon {
+  margin-right: 10px;
 }
 
 /* HERO */
@@ -153,6 +159,7 @@ header {
   background-position: center;
   background-size: cover;
   background-image: linear-gradient(
+      to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
@@ -206,6 +213,21 @@ header {
 
 .skills-item {
   width: calc((100%-90px) / 4);
+}
+
+.skillls-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+}
+
+.skills-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .skills-item:not(:last-child) {
